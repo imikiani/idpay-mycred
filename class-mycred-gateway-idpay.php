@@ -242,6 +242,8 @@ function mycred_idpay_plugin() {
 					if ( $http_status != 200 ) {
 						$log = sprintf( __( 'An error occurred while verifying the transaction. status: %s, code: %s, message: %s', 'idpay-mycred' ), $http_status, $result->error_code, $result->error_message );
 						$this->log_call( $pending_post_id, $log );
+						wp_redirect( $this->get_cancelled() );
+						exit;
 
 					} else {
 
