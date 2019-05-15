@@ -408,7 +408,7 @@ function mycred_idpay_plugin() {
 
 					$user                                   = get_userdata( $this->recipient_id );
 					$redirect_fields['detail2_description'] = __( 'Recipient', 'mycred' );
-					$redirect_fields['detail2_text']        = $user->idpay_display_name;
+					$redirect_fields['detail2_text']        = $user->display_name;
 
 				}
 
