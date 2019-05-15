@@ -227,7 +227,7 @@ function mycred_idpay_plugin() {
 						'timeout' => 30,
 					];
 
-					$response = $this->call_gateway_endpoint( 'https://api.idpayy.ir/v1.1/payment/verify', $args );
+					$response = $this->call_gateway_endpoint( 'https://api.idpay.ir/v1.1/payment/verify', $args );
 					if ( is_wp_error( $response ) ) {
 						$log = $response->get_error_message();
 						$this->log_call( $pending_post_id, $log );
