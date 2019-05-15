@@ -1,7 +1,7 @@
 === IDPay myCRED ===
 Contributors: imikiani
 Tags: idpay, gateway, mycred, point, credit
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Tested up to: 5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,6 +17,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 A complete documentation for installing this plugin is available [here](https://blog.idpay.ir/helps/171).
 
 == Changelog ==
+
+= 1.0.2, May 15, 2019 =
+* Correct recipient's display name.
+* Fix bugs.
 
 = 1.0.1, May 15, 2019 =
 * Load text domain.
