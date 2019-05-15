@@ -250,7 +250,7 @@ function mycred_idpay_plugin() {
 						if ( $result->status >= 100 ) {
 
 							if ( $this->complete_payment( $org_pending_payment, $id ) ) {
-								$log = sprintf( __( 'Payment succeeded. Status: %s, Track id: %, Card no: %s', 'idpay-mycred' ), $result->status, $result->track_id, $result->payment->card_no );
+								$log = sprintf( __( 'Payment succeeded. Status: %s, Track id: %s, Card no: %s', 'idpay-mycred' ), $result->status, $result->track_id, $result->payment->card_no );
 								$this->log_call( $pending_post_id, $log );
 								$this->trash_pending_payment( $pending_post_id );
 								wp_redirect( $this->get_thankyou() );
