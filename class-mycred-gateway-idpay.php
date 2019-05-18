@@ -327,7 +327,7 @@ function mycred_idpay_plugin() {
 
 				$data = [
 					'order_id' => $this->transaction_id,
-					'amount'   => $cost,
+					'amount'   => ( $this->prefs['currency'] == 'toman' ) ? ( $cost * 10 ) : $cost,
 					'name'     => '',
 					'phone'    => '',
 					'mail'     => '',
